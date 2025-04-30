@@ -1,8 +1,10 @@
 # EduAI Platform
 
+![EduAI Platform](https://via.placeholder.com/1200x600/0070f3/ffffff?text=EduAI+Platform)
+
 EduAI Platform is an AI-powered educational automation platform that integrates workflow automation (n8n), GitHub collaboration, and AI tools using Model Context Protocol (MCP) to create effective, practical educational experiences.
 
-## Features
+## 🚀 Features
 
 - **Customized Educational Courses**: Learn Git, GitHub, n8n, and more through structured courses
 - **Workflow Automation**: Create and use n8n workflows for educational tasks
@@ -10,7 +12,7 @@ EduAI Platform is an AI-powered educational automation platform that integrates 
 - **AI-Powered Learning**: Personalized recommendations and content using MCP
 - **Progress Tracking**: Monitor your learning journey with detailed analytics
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 14+, TypeScript, Tailwind CSS
 - **APIs**: axios for API integration
@@ -18,46 +20,66 @@ EduAI Platform is an AI-powered educational automation platform that integrates 
 - **AI Integration**: LangChain, Model Context Protocol (MCP)
 - **Automation**: n8n integration for workflows
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ and npm
-
-### Installation
-
-1. Clone the repository:
+## 🏁 Quick Start
 
 ```bash
+# Clone repository
 git clone https://github.com/your-username/eduaiplatform.git
 cd eduaiplatform
-```
 
-2. Install dependencies:
-
-```bash
+# Install dependencies
 npm install
-```
 
-3. Create a `.env.local` file in the root directory with the following variables:
+# Configure environment (create .env.local with required APIs)
+cp .env.example .env.local
 
-```
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
-NEXT_PUBLIC_GITHUB_CLIENT_ID=your_github_client_id
-MCP_API_KEY=your_mcp_api_key
-N8N_API_URL=http://localhost:5678/api/v1
-N8N_API_KEY=your_n8n_api_key
-```
-
-4. Start the development server:
-
-```bash
+# Start development server
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to see the platform in action.
 
-## Project Structure
+## 📚 Documentation
+
+For comprehensive documentation, see:
+- [User Manual](docs/MANUAL.md)
+- [Tutorial Guide](docs/TUTORIAL.md)
+- [Quick Start Guide](docs/QUICKSTART.md)
+- [API Documentation](docs/API.md)
+
+## 🔌 Integrations
+
+### n8n Workflow Automation
+
+The platform uses n8n for powerful workflow automation:
+- PR review automation
+- Course completion notifications
+- Content generation
+- Progress tracking
+
+### GitHub Collaboration
+
+Practice real-world development with:
+- PR workflows
+- Code reviews
+- Repository management
+- GitHub Copilot integration
+
+### MCP (Model Context Protocol)
+
+Leverage AI capabilities with:
+- Personalized learning paths
+- Automated quizzes
+- Course content recommendations
+- Code analysis
+
+## 📋 Requirements
+
+- **Node.js**: v18.0.0 or higher
+- **npm**: v9.0.0 or higher
+- Docker (optional, for running n8n)
+
+## 🗂️ Project Structure
 
 ```
 eduaiplatform/
@@ -77,6 +99,7 @@ eduaiplatform/
 │   │   └── github.ts    # GitHub integration
 │   ├── types/           # TypeScript type definitions
 │   └── utils/           # Helper utilities
+├── docs/                # Documentation
 ├── .gitignore           # Git ignore file
 ├── package.json         # Project dependencies
 ├── next.config.js       # Next.js configuration
@@ -84,29 +107,15 @@ eduaiplatform/
 └── tsconfig.json        # TypeScript configuration
 ```
 
-## Integration Guides
+## 📖 Usage
 
-### n8n Integration
+1. **Explore Courses**: Browse the catalog of available courses on Git, GitHub, n8n, and more
+2. **Enroll in Courses**: Start your learning journey with structured content
+3. **Discover Workflows**: Access pre-built automation templates for educational tasks
+4. **Track Progress**: Monitor your advancement through the interactive dashboard
+5. **Connect GitHub**: Practice real-world development workflows
 
-The platform integrates with n8n to create automated workflows:
-
-1. Install n8n: `docker run -p 5678:5678 n8nio/n8n`
-2. Visit `http://localhost:5678` to set up n8n
-3. Use the templates in the platform to create educational workflows
-
-### GitHub Integration
-
-1. Create a GitHub OAuth App at [GitHub Developer Settings](https://github.com/settings/developers)
-2. Set the Authorization callback URL to `http://localhost:3000/api/auth/github/callback`
-3. Update your `.env.local` file with the Client ID
-
-### MCP Integration
-
-1. Install MCP server: `npm install -g @modelcontextprotocol/server-filesystem`
-2. Run the MCP server: `mcp-server --dir ./mcp-data`
-3. Update your `.env.local` file with the MCP API key
-
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -116,18 +125,26 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## Scripts
+## 🔧 Available Scripts
 
 - `npm run dev` - Run development server
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## License
+## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 💡 Why EduAI Platform?
+
+- **Learn by Doing**: Practical, hands-on educational experiences
+- **AI-Enhanced Learning**: Personalized paths and recommendations
+- **Real-world Skills**: Industry-relevant tools and workflows
+- **Automation-First**: Focus on learning, not repetitive tasks
+- **Community-Driven**: Build on the work of top engineers worldwide
+
+## 🙏 Acknowledgments
 
 - Inspired by n8n, GitHub Copilot, and Model Context Protocol
 - Built with Next.js and modern web technologies
