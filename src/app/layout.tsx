@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,19 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="bg-primary text-white py-4">
-          <div className="container mx-auto px-4">
-            <nav className="flex justify-between items-center">
-              <h1 className="text-2xl font-bold">EduAI Platform</h1>
-              <ul className="flex space-x-6">
-                <li><a href="/" className="hover:underline">Home</a></li>
-                <li><a href="/courses" className="hover:underline">Courses</a></li>
-                <li><a href="/workflows" className="hover:underline">Workflows</a></li>
-                <li><a href="/profile" className="hover:underline">Profile</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+        <Navbar />
         <main className="container mx-auto px-4 py-8">
           {children}
         </main>
